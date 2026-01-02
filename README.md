@@ -1,2 +1,2 @@
 # React
-React notlarım
+React notlarımı tuttuğum Repo

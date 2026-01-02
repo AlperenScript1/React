@@ -1,0 +1,21 @@
+Proje oluşturmak için:
+| ---> npm create vite@latest 
+
+PROJE İSMİ (Kök Dizin)
+├── 📁 node_modules       --> Projenin çalışması için gereken dış kütüphaneler. (Dokunulmaz!)
+├── 📁 public             --> Değişmeyen dosyalar (favicon, robot.txt vb.).
+├── 📁 src                --> Kalbimiz burası. Tüm kodlar burada yazılır.
+│   ├── 📁 assets         --> Resimler, logolar, fontlar gibi medya dosyaları.
+│   ├── 📄 App.css        --> App bileşenine özel CSS dosyası.
+│   ├── 📄 App.jsx        --> Ana bileşenimiz. Sayfadaki her şey burada birleşir.
+│   ├── 📄 index.css      --> Tüm sitenin genel (global) stil ayarları.
+│   └── 📄 main.jsx       --> React'i başlatan dosya. App.jsx'i HTML'e bağlar.
+├── 📄 .gitignore         --> Git/GitHub'a nelerin yüklenmeyeceğini belirler.
+├── 📄 index.html         --> Ana HTML iskeleti. React buradaki "root" id'li div'e enjekte olur.
+├── 📄 package.json       --> Projenin kimlik kartı; bağımlılıklar ve komutlar burada yazar.
+├── 📄 package-lock.json  --> Kütüphanelerin versiyonlarını sabitleyen detaylı liste.
+└── 📄 vite.config.js     --> Vite'ın teknik yapılandırma ve ayar dosyası.
+
+Projeye Kütüphane ekleme:
+├── npm install lucide-react
+├── İndirilen bağımlılıklar 'package.json' yazılır.

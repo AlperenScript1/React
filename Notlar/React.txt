@@ -1,0 +1,4 @@
+.jsx Nedir ?
+├── JSX (JavaScript XML), en basit tabiriyle JavaScript içinde HTML yazmamıza olanak tanıyan bir sözdizimi (syntax) uzantısıdır.
+├── JavaScript değişkeni veya fonksiyonu sokmak istersen { } kullanırsın.
+├── Ek olarak etiketi kapatmazsan uyarı gibi özellikleride mevcuttur.
