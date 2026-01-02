@@ -1,6 +1,9 @@
 Proje oluşturmak için:
-| ---> npm create vite@latest 
-
+├── npm create vite@latest 
+│
+├── Projeyi çalıştırmak için    
+│    ├── npm run dev
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 PROJE İSMİ (Kök Dizin)
 ├── 📁 node_modules       --> Projenin çalışması için gereken dış kütüphaneler. (Dokunulmaz!)
 ├── 📁 public             --> Değişmeyen dosyalar (favicon, robot.txt vb.).
