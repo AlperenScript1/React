@@ -1,10 +1,10 @@
 import React from 'react' //React import ediyoruz.
 
-function login() { //Func oluşturuyoruz
+function Login() { //Func oluşturuyoruz
   return ( // Return ediyor tek farkı bu yoksa normal Func aslında
-    <div>   </div>
+    <div>Component-Login-import </div>
   )
 }
 
 //Başka yerlerde çağırıp kullanabilmek için 
-export default login //Yapıyoruz Func ismi olmalı
+export default Login //Yapıyoruz Func ismi olmalı ve Büyük harf ile başlamalı.
