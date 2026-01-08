@@ -20,5 +20,5 @@ PROJE İSMİ (Kök Dizin)
 └── 📄 vite.config.js     --> Vite'ın teknik yapılandırma ve ayar dosyası.
 
 Projeye Kütüphane ekleme:
-├── npm install lucide-react
+├── npm install lucide-react.
 ├── İndirilen bağımlılıklar 'package.json' yazılır.
