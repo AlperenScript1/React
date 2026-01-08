@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {},[])
   //? 'UseEffect' eğer bir önceki değer aynı ise değiştirilen yeni değer ile tekrardan render yapmaz performansdan kazanır.
   
-  //! 'sayac' değişkeni değiştiği zaman func çalışıyoe yani 'useEffect'
+  //! 'sayac' değişkeni değiştiği zaman func çalışıyor yani 'useEffect'
   useEffect(() => {console.log("DEGİSTİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİİ")},[sayac])
 
   useEffect(()=>{
@@ -25,7 +25,6 @@ function App() {
     }
   },[])
 
-  
   return (
     <>
       <div>Sayac: {sayac}</div> <br />
@@ -36,33 +35,3 @@ function App() {
 }
 
 export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
