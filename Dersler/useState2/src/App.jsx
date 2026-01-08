@@ -6,28 +6,38 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  // String name = "Alperen";
+  const [name, setName] = useState("//Alperen");
+  // 'name' değişkene ulaşacağımız isim 'setName' ise değişkene 'name' içerisindeki veriyi yeni bir veri ile değiştirmek için. 
+  // 'useState' başlangıç değerini belirtiyoruz.
+  const [lastName,setLastName] = useState("Şen");
+  // veri tipi [değerini tutacak değişken, değiştirebilcekFunc] = ilk Atılacak değer ("text")
+  //Birden fazlada veri tanımlayabiliriz.
+  const [language, setLanguage] = useState(["Alperen", "Python", "C#", "C++","JavaScript"])
+  //Bir değişkenin içerisindeki verilerede 'data.' ulaşılabilir.
+  const [data, setData] = useState({userName: "Alperen", lastName: "Şen", id:"87"})
+  // True & False
+  const [bayrak, setBayrak] = useState(true);
+
+  //'useState'bir değişken değiştiğinde tekrardan render edilir. 
+  const [sayac, setSayac] = useState(0)
+  
+  console.log(language) //Okumak için 
+  console.log(setLanguage) //Değiştirmek için 
+  
+  const nameChn = () =>{
+    setName("Delete name"); 
+    setLastName("Delete lastName")
+  }
+
+
+  const arttir =  () => {
+    setSayac(sayac + 1)
+  }
+
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+     
     </>
   )
 }

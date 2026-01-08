@@ -23,10 +23,6 @@ function App() {
       setSayac(sayac - 1)
       console.log("-1")
     }
-    else{
-      setSayac(sayac + 1)
-      console.log("+1")
-    }
   },[])
 
   
