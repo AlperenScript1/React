@@ -2,17 +2,15 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Login from './login' //import ediliyor.
-import Hello from './Hello'
-
+import Bilgi from './Bilgi'
 
 function App() {
-
+  
   return (
-   <div>
-     <Login/> 
-     <Hello/>
-   </div>
+    <>
+      {/* isimleri belirleyip değerleri giriyoruz*/}
+      <Bilgi urun="Tv" fiyat={1500} aciklama="OLED Ekran TV"></Bilgi> 
+    </>
   )
 }
 
