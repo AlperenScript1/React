@@ -10,4 +10,4 @@ function Veri(props) {
   )
 }
 
-export default Veri
+export default Veri 
