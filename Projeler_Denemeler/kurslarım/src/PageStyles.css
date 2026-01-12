@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    height: 80px; /* Biraz daha standart bir yükseklik */
+    background-color: rgb(5, 218, 147);
+    color: rgb(0, 0, 0); /* Arka plan koyu olduğu için yazı rengini beyaz yapmak daha iyi olur */
+    
+    /* Navbar'ı en üste sabitlemek için: */
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    /* İçerikleri hizalamak için Flexbox: */
+    display: flex;
+    align-items: center; /* Dikeyde ortalar */
+    justify-content: space-between; /* Logo ve menü arasını açar */
+    padding: 0 5%; /* Yanlardan boşluk verir */
+    
+    z-index: 1000; /* Diğer elementlerin üstünde kalması için */
+}
+
+/* Sayfa içeriğinin navbarın altında kalmaması için body'e boşluk verin */
+body {
+    margin: 0;
+    padding-top: 80px; 
+}
