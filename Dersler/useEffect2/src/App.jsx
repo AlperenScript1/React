@@ -6,11 +6,12 @@ import { useEffect } from 'react'
 
 function App() {
   let [name, setName] = useState("")
+  let [id,setId] = useState("")
 
   useEffect(() => { //'useEffect' call back func ister her zaman func oluştururlarak yazılır.
     console.log("useEffect - Aktif")
   }) //'[]' Bir dizi vermez isek her aksiyon aldığında çalışır.
-
+  
   useEffect(() => { //'useEffect' call back func ister her zaman func oluştururlarak yazılır.
     console.log("Component render edildiğinde  1 defa çalışır!")
   },[]) //'[]' Liste verildiği zaman sadece 1 defa çalışır.
@@ -19,6 +20,12 @@ function App() {
   useEffect(()=>{
     console.log("name değişti!")
   },[name]) 
+  
+  //'useEffect' aynı zamanda birden fazla parametrede kontrol edebilir.
+  useEffect(()=>{
+    console.log("name değişti!")
+  },[name, id]) //'name' VEYA 'id' değiştiğinde çalışır.
+  
 
   return (
     <>
