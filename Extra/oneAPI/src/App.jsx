@@ -1,33 +1,45 @@
-import { useState } from 'react'
+import { useEffect, useEffectEvent, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import axios from 'axios'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+   const [data, setData] = useState()
+
+  //https://rickandmortyapi.com/api/character
+
+  // axios.get("https://rickandmortyapi.com/api/character") 
+  //   .then(response =>{console.log(response.data)})
+  //    .catch(error => {
+  //   console.error("Error");  
+  //   console.error(error);  
+  // });
+
+  const api = async() =>{
+    try{
+      const response = await axios.get("https://rickandmortyapi.com/api/character")
+      setData(response.data.results[0])
+      console.log(data)
+    } //veri çekme olayı.
+    catch{
+      console.log("Err..")
+    }
+  }
+
+  useEffect(() => {
+    api()
+  },[])
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+    <div> 
+      <div><p>Deger: {data.status} </p> </div>
+      <div><p>Deger: </p>  </div>
+    </div>
+
     </>
   )
 }
